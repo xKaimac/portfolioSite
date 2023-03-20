@@ -282,7 +282,7 @@ Lightbulb is on the left hand side and glows yellow*/
   z-index: 1;
 }
 
-/* Style settings for when dark mode is on.  Lightbuld is to the right hand side and doesn' glow */
+/* Style settings for when dark mode is on.  Lightbulb is to the right hand side and doesn' glow */
 .checkbox:after {
   background:
     linear-gradient(transparent 50%, rgba(0,0,0,0.3) 0) 0 50% / 50% 100%,

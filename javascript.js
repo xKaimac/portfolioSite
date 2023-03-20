@@ -1,4 +1,4 @@
-
+// Keeps the header at the top of the screen
 window.onscroll = function() {myFunction()};
             
 var header = document.getElementById("topNav");
@@ -12,9 +12,10 @@ function myFunction() {
     }
 }
 
+//Toggle between light and dark mode
 function colorModeSwitch () {
     const mode = localStorage['colorMode']
-    document.body.classList.toggle('darkMode', mode)
+    document.body.classList.toggle(mode, 'darkMode')
   }
 
 const checkbox         = document.querySelector('#chk')
@@ -28,7 +29,7 @@ checkbox.addEventListener('change', () => {
 colorModeSwitch()
 
 
-
+//script for the ratingsText project
 let ratingsText = "This project is a simple calculator that takes multiple rating inputs by the user, and displays the mean value."
 
 let btn = document.querySelector(".effect01");
