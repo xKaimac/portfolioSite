@@ -1,0 +1,334 @@
+/* ---This page is used by almost every html document on this site--- */
+
+
+/* ---Below are standard settings for all default parts of the page */
+
+/* Sets the default of all objects to be changed later */
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Default background and text colour for all elements in the body */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Background and text colour settings for the dark mode toggle */
+.darkMode {
+  background-color: #292525;
+  color: rgb(228, 220, 220);
+}
+
+/* Lowers brightness and increases contrast when dark mode is enabled */
+.darkMode img {
+  filter:brightness(.8) contrast(1.2);
+}
+
+/* Forces footer to bottom of page. (100% vertical height - px height of footer) */
+.allButFooter{
+  min-height: calc(100vh - 50px);
+}
+
+/* Style settings for social media link banner */
+.socialBanner {
+  background-color: rgb(235, 112, 112);
+  text-align: center;
+  padding: 5px;
+}
+
+/* Removes blue link decoration from image links on social banner */
+.socialBanner > a {
+  text-decoration: none;
+}
+
+/* Adds padding to the image links in the social banner */
+#socialIcons {
+  padding: 5px;
+}
+
+/* Sets standard style settings for paragraph elements */
+p {
+  padding: 1em;
+  margin: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* Default style for all paragraph titles */
+.pTitle {  
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  width: 70%;
+}
+
+/* Centres all titles with the right class */
+.centeredTitle {
+  text-align: center;
+}
+
+
+/* ---Below are settings for the navigation bar at the top of the page--- */
+
+/* Default style settings for top navigation bar */
+.topNav {
+  background-color: rgb(216, 75, 75);
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  padding: 0.2em;
+  padding-top: .7em;
+  padding-bottom: .7em;
+}
+
+/* Same as above but for the anchor links in the navbar */
+.topNav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Sets the style for the tab that is currently in use on the nav bar */
+.topNav a.active {
+  background-color: #292525;
+  color: white;   
+}
+
+/* Sets the style for the tab that is currently being hovered over */
+.topNav a:hover {
+  background-color: rgb(219, 219, 219);
+  color: black;
+}
+
+/* class that is set to topNav when the socialBanner has been scrolled past.
+  This keeps topNav at the top of the screen */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/* ---Below are settings for the navigation bar at the bottom of the page-=-- */
+
+/* Default style settings for footer navigation bar */
+.botNav {
+  background-color: rgb(65, 64, 64);
+  padding: 1em;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  overflow: hidden;  
+  display:block;
+}
+
+/* same as above but for the anchor links in the footer navbar */
+.botNav a {
+  padding: 1em;
+  text-decoration: none;
+  color: #746f6f;
+}
+
+/* Sets the style for the link in the footer navbar that is currently being hovered over */
+.botNav a:hover {
+  background-color: white;
+  color: black;
+
+  overflow: hidden; 
+}
+
+
+/* ---About page specific settings--- */ 
+
+/* Below are the image settings for the picture at the top of the About page */
+#profilePicture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3em;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* Aligns and sets max width of donate title and button on About page */
+#OnlyFans, #OnlyFans1, #donate {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+
+/* Style settings for the comment under the donate title */
+#OnlyFans1 {
+  padding: 0;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: x-small;
+}
+
+/* Sets size of the coffee donate button */
+#donate {
+  max-width: 500px;
+}
+
+/* Removes the top margin from the About me title, bringing it closer to the image */
+#about {
+  margin-top: 0px;
+}
+
+
+/* ---Contact page specific settings--- */
+
+/* Sets the top margin for the title on the Contact page */
+#contactMe {
+  margin-top: 1em;
+}
+
+/* Centers paragraph text under Contact title */
+#contactDetails {
+  width: 70%;
+  text-align: center;
+}
+
+
+/* ---Below are the style settings for the contact form on the Contact page--- */
+
+/*Style settings for the entire box container of the contact form */
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 70%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+} 
+
+/* Style settings for the text boxes */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+/* Style settigns for the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style settings for hover on submit button */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+/* ---Below are the style settings for the light/dark mode checkbox--- */
+
+/* Default style settings of checkbox, to be modified later */
+.checkbox {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 0.75em;
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.15) inset;
+  color: #d7d7d7;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  padding: 0.15em;
+  width: 3em;
+  height: 1.5em;
+  transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* sets default content of checkbox */
+.checkbox:before, .checkbox:after {
+  content: "";
+  display: block;
+}
+
+/* style settings for when dark mode is off (default) 
+Lightbulb is on the left hand side and glows yellow*/
+.checkbox:before {
+  background-color: #fdea7b;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  z-index: 1;
+}
+
+/* Style settings for when dark mode is on.  Lightbulb is to the right hand side and doesn' glow */
+.checkbox:after {
+  background:
+    linear-gradient(transparent 50%, rgba(0,0,0,0.3) 0) 0 50% / 50% 100%,
+    repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+    radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+  background-repeat: no-repeat;
+  border: 0.25em solid transparent;
+  border-left: 0.4em solid #d8d8d8;
+  border-right: 0 solid transparent;
+  transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateX(-22.5%);
+  transform-origin: 25% 50%;
+  width: 1.2em;
+  height: 1em;
+}
+
+/* Style settings for the background and shadow that the lightbulb is housed in when dark mode is on */
+.checkbox:checked {
+  background-color: rgba(0,0,0,1);
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.45) inset;
+}
+
+/* Style settings for the background and shadow that the lightbulb is housed in when dark mode is off */
+.checkbox:checked:before {
+  background-color: currentColor;
+  transform: translateX(125%)
+}
+
+/* Animation settings when the lightbulb is checked */
+.checkbox:checked:after {
+  border-left-color: currentColor;
+  transform: translateX(-2.5%) rotateY(180deg);
+}
+
+
+/* ---Below are specific settings based on user's screen size--- */
+
+/* Sets different width settings for larger screens */
+@media only screen and (min-width: 769px) {
+  p, .pTitle{
+    width: 40%;
+  }
+  .container1 {
+    width: 25%;
+  }
+  #contactDetails {
+    width: 27%;
+  }
+}

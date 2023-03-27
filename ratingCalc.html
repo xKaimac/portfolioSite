@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings Calculator | Waste of my time</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./ratingStyles.css">
+
+</head>
+<body>
+    <div class="allButFooter">
+
+        <div class="socialBanner">
+
+            <div>Feed my ego</div>
+            <a href="https://www.linkedin.com/in/alistair-macvicar-b89993179/" target="_blank">
+                <img id="socialIcons" src="/images/iconmonstr-linkedin-3.svg" title="LinkedIn">
+            </a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7364393/" target="_blank">
+                <img id="socialIcons" src="/images/iconmonstr-instagram-13.svg" title="Instagram">
+            </a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7364393/" target="_blank">
+                <img id="socialIcons" src="/images/iconmonstr-facebook-3.svg" title="Facebook">
+            </a>    
+            <a href="https://github.com/xKaimac" target="_blank">
+                <img id="socialIcons" src="/images/iconmonstr-github-3.svg" title="Github">   
+            </a>
+
+        </div>
+
+        <div class="topNav" id="topNav">
+            <a href="/home.html">Home</a>
+            <a href="/portfolio.html">Portfolio</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/about.html">About</a>
+            <a href="./pyGame">Game</a>     
+      </div> 
+
+        <div>
+
+          <h1 class="pTitle">
+            Average Rating Calculator
+          </h1>
+
+            <div class="ratings">
+              <div class="row" id="topRow">
+                <label for="star5">5 stars</label> <input type="number" min="0" step="1" class="rating" id="star5" value="0">
+              </div>
+
+              <div class="row">
+                <label for="star4">4 stars</label> <input type="number" min="0" step="1" class="rating" id="star4" value="0">
+              </div>
+
+              <div class="row">
+                <label for="star3">3 stars</label> <input type="number" min="0" step="1" class="rating" id="star3" value="0">
+              </div>
+
+              <div class="row">
+                <label for="star2">2 stars</label> <input type="number" min="0" step="1" class="rating" id="star2" value="0">
+              </div>
+              
+              <div class="row">
+                <label for="star1">1 star</label> <input type="number" min="0" step="1" class="rating" id="star1" value="0">
+              </div>
+
+              <div class="row" id="botRow">
+                <label for="average">Mean</label><input disabled type="number" id="average" value="0">
+              </div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+    <div class="botNav">
+        <a href="/home.html">Home</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/about.html">About</a>
+
+        <a href="./pyGame">Game</a>             <input type="checkbox" class="checkbox" id="chk"/>
+    </div> 
+
+    <script src="./javascript.js"></script>
+    <script src="js/ratings.js"></script>
+
+</body>
+</html>
