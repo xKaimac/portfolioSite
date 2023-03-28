@@ -57,6 +57,12 @@ async def custom_site():
     import json
     from pathlib import Path
 
+    if sys.platform == 'emscripten':
+        try:
+            pygame.mixer.SoundPatch()
+        except:
+            pass
+
 
 
     import embed
